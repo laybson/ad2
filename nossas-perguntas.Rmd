@@ -1,0 +1,52 @@
+---
+title: "nossas-perguntas"
+author: "laybson"
+date: "3 de setembro de 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+
+data_CEAP <- read.csv("dadosCEAP.csv")
+data_CEAP$valorGlosa <- as.numeric(sub(",", ".", data_CEAP$valorGlosa, fixed = TRUE))
+```
+
+###Quais são os deputados que gastaram mais dinheiro da CEAP? Quais são os mais econômicos?
+```{r}
+
+```
+
+###Quais os estados cujos deputados gastam mais no exterior? Quais os estados cujos deputados gastam menos no exterior?
+```{r}
+
+```
+
+###Quais os partidos cujos parlamentares mais usam CEAP no estado da Paraíba? Quais são os que menos usam? Mesma pergunta considerando valores em R$.
+```{r}
+
+```
+
+###Quais os deputados que mais ultrapassam o limite de CEAP do seu estado?
+```{r}
+
+```
+
+###Quais estados cujos parlamentares gastam mais com passagens aéreas?
+```{r}
+
+```
+
+###Escolha três partidos e responda: Quais são os tipos de despesa mais utilizados no uso da CEAP pelos deputados desses partidos? Mesma pergunta considerando valores em R$.
+```{r}
+
+```
+
+
+
+
+
